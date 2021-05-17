@@ -1,0 +1,26 @@
+#PdfTp {
+
+    width: 60em;
+    height: 60em;
+
+}
+
+@media (max-width: 600px) {
+
+    #PdfTp {
+
+        width: 20em;
+        height: 30em;
+
+    }
+}
+
+@media (min-width: 600px) and  (max-width: 992px) {
+
+    #PdfTp {
+
+        width: 30em;
+        height: 40em;
+
+    }
+}

@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <!-- Css Bootstrap -->
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="../Css/Estilos.css">
+
+    <title>Tp Algoritmos y funciones del lenguaje</title>
+</head>
+<body>
+<header>
+
+    <?php include("../header.php"); ?>
+
+</header>
+
+<main>
+
+
+    <div class="container mt-5 mb-5 d-flex justify-content-center flex-column">
+        <h3 class="text-center mb-5">Solución Ejercicio 1:</h3>
+
+        <?php include_once "instagramo.php" ?>
+
+        <div class="container w-75 py-5 bg-light border rounded flex-wrap">
+
+            <h4 class="container d-flex justify-content-center text-primary">Subir Imágen</h4>
+
+            <hr class="container w-75 mt-4">
+
+            <form class="container d-flex flex-column flex-lg-row flex-xl-row flex-md-row justify-content-center mt-4"
+                  action="instagramo.php" method="post" enctype="multipart/form-data">
+
+                <input class="w-15 me-4 bg-light border-1 rounded" type="text" name="nombreArchivo"
+                       placeholder="Nombre">
+                <input class="me-3 my-3 my-lg-0 my-md-0 my-xl-0" type="file" name="archivo">
+                <input type="submit">
+
+
+            </form>
+
+        </div>
+    </div>
+
+</main>
+
+<footer>
+
+    <?php include("../footer.php") ?>
+</footer>
+
+
+<!-- Script Bootstrap -->
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"
+        integrity="sha384-SR1sx49pcuLnqZUnnPwx6FCym0wLsk5JZuNx2bPPENzswTNFaQU1RDvt3wT4gWFG"
+        crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.min.js"
+        integrity="sha384-j0CNLUeiqtyaRmlzUHCPZ+Gy5fQu0dQ6eZ/xAww941Ai1SxSY+0EQqNXNE6DZiVc"
+        crossorigin="anonymous"></script>
+
+</body>
+</html>
